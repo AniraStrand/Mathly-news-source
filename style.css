@@ -1,0 +1,76 @@
+body {
+    align-items: center;
+    display: flex;
+
+    height:100vh;
+    background: rgb(35,39,48);
+    background: -moz-linear-gradient(36deg, rgba(35,39,48,1) 0%, rgba(38,38,125,1) 35%, rgba(42,58,96,1) 100%);
+    background: -webkit-linear-gradient(36deg, rgba(35,39,48,1) 0%, rgba(38,38,125,1) 35%, rgba(42,58,96,1) 100%);
+    background: linear-gradient(36deg, rgba(35,39,48,1) 0%, rgb(36, 36, 58) 35%, rgba(42,58,96,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#232730",endColorstr="#2a3a60",GradientType=1);
+    overflow:hidden;
+    padding:0px;
+    font: 100px SFRounded;
+
+
+
+
+}
+@font-face {
+    font-family: 'SFRounded';
+    src: url('SFRounded-Regular.woff2') format('woff2'),
+        url('SFRounded-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#grid-items {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max width: 922px;
+    width: calc(100 - 20px);
+
+}
+
+
+
+
+
+.grid-item {
+    background-color: rgba(35,39,70, 0.3);
+    transition: background-color 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    color: lightslategray;
+    font: 30px SFRounded;
+
+}
+.grid-item::before {
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255, 0.06),
+        transparent 40%
+    );
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+
+}
+
+.grid-item:hover {
+    background-color: rgba(35,39,70, 0.7);
+    transition: background-color 0.5s;
+
+
+}
