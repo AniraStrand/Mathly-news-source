@@ -11,6 +11,7 @@ body {
     overflow:hidden;
     padding:0px;
     font: 100px SFRounded;
+    scroll-behavior: smooth;
 
 
 
@@ -74,3 +75,19 @@ body {
 
 
 }
+
+.amogus_phldr {
+    height: 210px;
+    width: 61%;
+    opacity:100%;
+}
+
+
+
+.amogus_phldr:hover {
+    height: 200px;
+    width: 50%;
+    opacity: 50%;
+    transition: opacity 1s;
+
+  }
