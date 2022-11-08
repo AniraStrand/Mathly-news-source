@@ -17,6 +17,7 @@ body {
 
 
 }
+
 @font-face {
     font-family: 'SFRounded';
     src: url('SFRounded-Regular.woff2') format('woff2'),
@@ -32,12 +33,9 @@ body {
     gap: 8px;
     max width: 922px;
     width: calc(100 - 20px);
+    scroll-behavior: smooth;
 
 }
-
-
-
-
 
 .grid-item {
     background-color: rgba(35,39,70, 0.3);
@@ -46,48 +44,25 @@ body {
     cursor: pointer;
     padding: 20px;
     width: 200px;
-    height: 200px;
+    height: 100px;
     font-size: 30px;
     text-align: center;
     position: relative;
     color: lightslategray;
     font: 30px SFRounded;
+    scroll-behavior: smooth;
 
 }
-.grid-item::before {
-    background: radial-gradient(
-        800px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255, 0.06),
-        transparent 40%
-    );
-    border-radius: inherit;
-    content: "";
-    height: 100%;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    width: 100%;
+.grid-text {
 
 }
-
-.grid-item:hover {
-    background-color: rgba(35,39,70, 0.7);
-    transition: background-color 0.5s;
-
+.issuegrids {
+    display:flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: calc(100 - 20px);
 
 }
+.issue-text {
 
-.amogus_phldr {
-    height: 210px;
-    width: 61%;
-    opacity:100%;
 }
-
-
-
-.amogus_phldr:hover {
-    height: 200px;
-    width: 50%;
-    opacity: 50%;
-    transition: opacity 1s;
-
-  }
