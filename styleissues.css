@@ -44,7 +44,7 @@ body {
     cursor: pointer;
     padding: 20px;
     width: 200px;
-    height: 200px;
+
     font-size: 30px;
     text-align: center;
     position: relative;
@@ -54,5 +54,5 @@ body {
 
 }
 .grid-text {
-    
+
 }
