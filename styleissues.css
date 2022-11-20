@@ -44,7 +44,7 @@ body {
     cursor: pointer;
     padding: 20px;
     width: 200px;
-    height: 100px;
+
     font-size: 30px;
     text-align: center;
     position: relative;
@@ -54,15 +54,5 @@ body {
 
 }
 .grid-text {
-
-}
-.issuegrids {
-    display:flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: calc(100 - 20px);
-
-}
-.issue-text {
 
 }
