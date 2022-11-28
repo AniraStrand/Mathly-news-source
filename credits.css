@@ -17,6 +17,7 @@ body {
 
 
 }
+
 @font-face {
     font-family: 'SFRounded';
     src: url('SFRounded-Regular.woff2') format('woff2'),
@@ -35,18 +36,14 @@ body {
 
 }
 
-
-
-
-
 .grid-item {
     background-color: rgba(35,39,70, 0.3);
     transition: background-color 0.5s;
     border-radius: 10px;
     cursor: pointer;
     padding: 20px;
-    width: 200px;
-    height: 200px;
+    width: 781px;
+    height: 40px;
     font-size: 30px;
     text-align: center;
     position: relative;
@@ -54,18 +51,19 @@ body {
     font: 30px SFRounded;
 
 }
-.grid-item::before {
-    background: radial-gradient(
-        800px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255, 0.06),
-        transparent 40%
-    );
-    border-radius: inherit;
-    content: "";
-    height: 100%;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    width: 100%;
+
+.chosen-grid-item {
+    background-color: rgba(35,39,70, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    color: lightslategray;
+    font: 30px SFRounded;
 
 }
 
@@ -76,23 +74,16 @@ body {
 
 }
 
-.amogus_phldr {
-    height: 210px;
-    width: 61%;
-    opacity:100%;
-}
-
-
-
-.amogus_phldr:hover {
-    height: 200px;
-    width: 50%;
-    opacity: 50%;
-    transition: opacity 1s;
-
-}
-
 #titlecard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max width: 922px;
+    width: calc(100 - 20px);
+    grid-template-columns: repeat(3, 1fr)
+}
+
+#toolbar {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
