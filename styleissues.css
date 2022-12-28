@@ -16,6 +16,7 @@ body {
 
 
 
+
 }
 
 @font-face {
@@ -28,23 +29,24 @@ body {
 }
 
 #grid-items {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     gap: 8px;
     max width: 922px;
     width: calc(100 - 20px);
-    scroll-behavior: smooth;
+    grid-template-columns: repeat(3, 1fr)
 
 }
 
 .grid-item {
+
     background-color: rgba(35,39,70, 0.3);
     transition: background-color 0.5s;
     border-radius: 10px;
     cursor: pointer;
     padding: 20px;
     width: 200px;
-
+    height: 100px;
     font-size: 30px;
     text-align: center;
     position: relative;
@@ -53,7 +55,31 @@ body {
     scroll-behavior: smooth;
 
 }
+
+.grid-item:hover {
+    background-color: rgba(35,39,70, 0.7);
+    transition: background-color 0.5s;
+}
+
 .grid-text {
 
 
+}
+
+.issue-text{
+display: block;
+text-align: center;
+}
+#issuegrids{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 343px;
+    max width: 922px;
+    width: calc(100 - 20px);
+    grid-template-columns: repeat(3, 1fr)
+}
+.pdf-file{
+    width:50%;
+    height: 1000px; 
+    display: inherit;
 }

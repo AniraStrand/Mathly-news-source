@@ -59,3 +59,13 @@ body {
 
 
 }
+#top-bar {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.amogus_phldr {
+    height: 210px;
+    width: 61%;
+    opacity:100%;
+}
